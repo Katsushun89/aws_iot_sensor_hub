@@ -37,6 +37,7 @@ certificate.pem.crtとprivate.pem.keyは認証情報がファイル名に含ま�
 ```
 #例
 $ ln -s xxxxxxxxxxx-certificate.pem.crt certificate.pem.crt
+$ ln -s xxxxxxxxxxx-private.pem.key private.pem.key
 ```
 
 endpoitのパスとPORTもAWS IOT側に合わせて適宜修正すること
