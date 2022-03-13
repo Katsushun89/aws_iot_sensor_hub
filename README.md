@@ -9,6 +9,8 @@ MQTT client to AWS IOT
 
 Raspberry Piなどに[MONOSTICK](https://mono-wireless.com/jp/products/MoNoStick/index.html)が接続された状態を想定
 
+## 構成図
+![](doc/system_structure.drawio.svg)
 
 ### 実行例
 
