@@ -5,10 +5,12 @@ MQTT publisher to AWS IOT
 センサー情報などをAWS IOT経由でアップロードするためのMQTT Client
 
 ## mqtt_client_pal
-TWELITE PALをセンシング結果をアップロード
+[TWELITE PAL](https://mono-wireless.com/jp/products/twelite-pal/index.html)のセンシング結果(温度、湿度、照度）をアップロード
+
+Raspberry Piなどに[MONOSTICK](https://mono-wireless.com/jp/products/MoNoStick/index.html)が接続された状態を想定
+
 
 ### 実行例
-
 
 ```jsx
 $ python3 mqtt_client_pal.py 
@@ -20,7 +22,7 @@ sensor/palamb0001/sensor_update {'device_name': 'palamb0001', 'type': 'Envsensor
 config.pyに記載している認証情報のファイルは
 cert/ディレクトリ以下に配置する
 
-```
+```python
     ENDPOINT = 'aaaaaaaa.iot.ap-northeast-1.amazonaws.com'
     PORT = 9999
     ROOTCA = 'cert/AmazonRootCA1.pem'
@@ -37,7 +39,7 @@ $ ln -s xxxxxxxxxxx-certificate.pem.crt certificate.pem.crt
 
 endpoitのパスとPORTもAWS IOT側に合わせて適宜修正すること
 
-```
+```python
     ENDPOINT = 'aaaaaaaa.iot.ap-northeast-1.amazonaws.com'
     PORT = 9999
 ```
