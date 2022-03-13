@@ -1,5 +1,5 @@
 # aws_iot_sensor_hub
-MQTT publisher to AWS IOT
+MQTT client to AWS IOT
 
 ## 概要
 センサー情報などをAWS IOT経由でアップロードするためのMQTT Client
