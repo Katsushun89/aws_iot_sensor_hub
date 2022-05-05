@@ -25,7 +25,7 @@ def main():
     
     global connected
     topic = 'unset'
-    client = paho.mqtt.client.Client()
+    client = paho.mqtt.client.Client(client_id="home_sensor")
 
     client.tls_set(
         ca_certs = Constants.ROOTCA,
